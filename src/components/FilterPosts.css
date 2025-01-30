@@ -1,0 +1,31 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none; /* Remove default list styling */
+    padding-left: 20px; /* Add some padding to align the bar */
+  }
+  
+  ul > li {
+    padding: 5px;
+    position: relative; /* Ensure the pseudo-element is positioned relative to the li */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  ul > li::before {
+    content: ""; /* Required for pseudo-elements */
+    height: 20px; /* Height of the bar */
+    width: 5px; /* Width of the bar */
+    background-color: blue; /* Default color of the bar */
+    position: absolute; /* Position the bar absolutely */
+    left: -5px; /* Move the bar to the left of the li */
+    top: 50%;
+    transform: translateY(-50%); /* Adjust vertical alignment */
+  }
+  
+  ul > li:hover::before {
+    background-color: green;
+  }
+  ul>li:hover{
+    background-color: gray;
+    opacity: 0.5;
+  }
