@@ -1,0 +1,11 @@
+p{
+    border:1px solid black;
+    padding: 4px;
+}
+.p_2{
+    background-color: aqua;
+    color: black;
+    position:relative;
+    top: 70px;
+    left: 40px;
+}
